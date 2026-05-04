@@ -1,0 +1,13 @@
+{
+    "cSpell.words": [
+        "cachix",
+        "clippy",
+        "DEVENV",
+        "DIRENV",
+        "nixpkgs",
+        "pkgs",
+        "rustc",
+        "substituters",
+        "venv"
+    ]
+}
