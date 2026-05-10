@@ -9,6 +9,9 @@
     vips
     chromium
     playwright-driver.browsers
+    typescript-language-server
+    vtsls
+    vue-language-server
   ];
 
   env = {
