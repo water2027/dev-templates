@@ -14,6 +14,10 @@
           path = ./templates/javascript;
           description = "web or nodejs or bun";
         };
+        frontend = {
+          path = ./templates/frontend;
+          description = "frontend app with node, pnpm, bun, chromium and playwright";
+        };
         rust = {
           path = ./templates/rust;
           description = "rust";
