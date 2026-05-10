@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   packages = [
@@ -7,7 +7,7 @@
 
   languages.javascript = {
     enable = true;
-    package = inputs.nixpkgs-nodejs.packages.${pkgs.system}."latest-lts";
+    package = pkgs.nodejs_24;
     # directory = "";
     corepack = {
       enable = true;
