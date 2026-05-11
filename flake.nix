@@ -18,6 +18,10 @@
           path = ./templates/frontend;
           description = "frontend app with node, pnpm, bun, chromium and playwright";
         };
+        cpp = {
+          path = ./templates/cpp;
+          description = "c++ with gcc, clang-tools, cmake, ninja and gdb";
+        };
         rust = {
           path = ./templates/rust;
           description = "rust";

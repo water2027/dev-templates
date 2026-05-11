@@ -15,3 +15,9 @@ nix shell zsh # 按需修改后启动环境
 ```sh
 nix flake init -t github:water2027/dev-templates#frontend
 ```
+
+C++ 开发环境：
+
+```sh
+nix flake init -t github:water2027/dev-templates#cpp
+```
