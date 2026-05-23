@@ -26,6 +26,10 @@
           path = ./templates/rust;
           description = "rust";
         };
+        ts-monorepo = {
+          path = ./templates/ts-monorepo;
+          description = "monorepo";
+        };
       };
     };
 }

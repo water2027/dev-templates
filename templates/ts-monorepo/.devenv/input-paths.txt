@@ -1,0 +1,10 @@
+/home/water/dev-templates/templates/ts-monorepo/.devenv/bootstrap/bootstrapLib.nix
+/home/water/dev-templates/templates/ts-monorepo/.devenv/bootstrap/default.nix
+/home/water/dev-templates/templates/ts-monorepo/.devenv/bootstrap/resolve-lock.nix
+/home/water/dev-templates/templates/ts-monorepo/devenv.local.nix
+/home/water/dev-templates/templates/ts-monorepo/devenv.lock
+/home/water/dev-templates/templates/ts-monorepo/devenv.nix
+/home/water/dev-templates/templates/ts-monorepo/devenv.yaml
+/home/water/.config/nixpkgs/overlays
+/home/water/.config/nixpkgs/overlays.nix
+/home/water/dev-templates/templates/ts-monorepo/.env
