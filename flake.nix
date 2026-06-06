@@ -1,10 +1,9 @@
 {
-  description = "water's development templates";
+  description = "water's nix develop templates";
 
   outputs =
     { ... }:
     {
-      devenvModules = { };
       templates = {
         python = {
           path = ./templates/python;
