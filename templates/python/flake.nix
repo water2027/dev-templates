@@ -36,6 +36,11 @@
               pkgs.uv
             ];
 
+            PIP_INDEX_URL = "https://mirrors.ustc.edu.cn/pypi/simple";
+            UV_DEFAULT_INDEX = "https://mirrors.ustc.edu.cn/pypi/simple";
+            UV_INDEX_URL = "https://mirrors.ustc.edu.cn/pypi/simple";
+            UV_PYTHON_INSTALL_MIRROR = "https://mirrors.ustc.edu.cn/github-release/astral-sh/python-build-standalone/";
+
             shellHook = ''
               python --version
 

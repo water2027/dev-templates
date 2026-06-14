@@ -32,16 +32,21 @@
               vtsls
               vue-language-server
 
+              pnpm
               nodejs_24
               corepack
-              pnpm
               bun
             ];
+
+            npm_config_registry = "https://registry.npmmirror.com/";
+            NPM_CONFIG_REGISTRY = "https://registry.npmmirror.com/";
+            COREPACK_NPM_REGISTRY = "https://registry.npmmirror.com/";
 
             PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
             PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1";
 
             shellHook = ''
+              export PATH="${pkgs.pnpm}/bin:$PATH"
               node --version
               pnpm --version
             '';

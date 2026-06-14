@@ -21,11 +21,19 @@
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
+              pnpm
               nodejs_24
               corepack
-              pnpm
               bun
             ];
+
+            npm_config_registry = "https://registry.npmmirror.com/";
+            NPM_CONFIG_REGISTRY = "https://registry.npmmirror.com/";
+            COREPACK_NPM_REGISTRY = "https://registry.npmmirror.com/";
+
+            shellHook = ''
+              export PATH="${pkgs.pnpm}/bin:$PATH"
+            '';
           };
         }
       );
