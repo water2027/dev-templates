@@ -15,11 +15,11 @@
         };
         frontend = {
           path = ./templates/frontend;
-          description = "frontend app with node, pnpm, bun, chromium and playwright";
+          description = "frontend app with node, pnpm, bun, chromium on Linux and playwright";
         };
         cpp = {
           path = ./templates/cpp;
-          description = "c++ with gcc, clang-tools, cmake, ninja and gdb";
+          description = "c++ with gcc, clang-tools, cmake, ninja, gdb on Linux and lldb on Darwin";
         };
         rust = {
           path = ./templates/rust;

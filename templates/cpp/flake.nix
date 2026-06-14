@@ -9,6 +9,8 @@
       systems = [
         "x86_64-linux"
         "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
       ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
     in
@@ -20,14 +22,21 @@
         in
         {
           default = pkgs.mkShell {
-            packages = with pkgs; [
-              gcc
-              clang-tools
-              cmake
-              ninja
-              gdb
-              pkg-config
-            ];
+            packages =
+              with pkgs;
+              [
+                gcc
+                clang-tools
+                cmake
+                ninja
+                pkg-config
+              ]
+              ++ lib.optionals stdenv.isLinux [
+                gdb
+              ]
+              ++ lib.optionals stdenv.isDarwin [
+                lldb
+              ];
 
             shellHook = ''
               c++ --version

@@ -9,6 +9,8 @@
       systems = [
         "x86_64-linux"
         "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
       ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
     in
@@ -20,24 +22,30 @@
         in
         {
           default = pkgs.mkShell {
-            packages = with pkgs; [
-              git
-              jq
-              openssl
-              pkg-config
-              vips
-              chromium
-              playwright-driver.browsers
-              vscode-langservers-extracted
-              typescript-language-server
-              vtsls
-              vue-language-server
+            packages =
+              with pkgs;
+              [
+                git
+                jq
+                openssl
+                pkg-config
+                vips
+              ]
+              ++ lib.optionals stdenv.isLinux [
+                chromium
+              ]
+              ++ [
+                playwright-driver.browsers
+                vscode-langservers-extracted
+                typescript-language-server
+                vtsls
+                vue-language-server
 
-              pnpm
-              nodejs_24
-              corepack
-              bun
-            ];
+                pnpm
+                nodejs_24
+                corepack
+                bun
+              ];
 
             npm_config_registry = "https://registry.npmmirror.com/";
             NPM_CONFIG_REGISTRY = "https://registry.npmmirror.com/";
