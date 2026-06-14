@@ -37,6 +37,7 @@
               ++ [
                 playwright-driver.browsers
                 vscode-langservers-extracted
+                eslint_d
                 typescript-language-server
                 vtsls
                 vue-language-server

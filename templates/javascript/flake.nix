@@ -24,6 +24,7 @@
           default = pkgs.mkShell {
             packages = with pkgs; [
               vscode-langservers-extracted
+              eslint_d
 
               pnpm
               nodejs_24
