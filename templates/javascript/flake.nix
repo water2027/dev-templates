@@ -21,6 +21,8 @@
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
+              vscode-langservers-extracted
+
               pnpm
               nodejs_24
               corepack

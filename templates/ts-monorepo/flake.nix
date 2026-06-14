@@ -28,6 +28,7 @@
               vips
               chromium
               playwright-driver.browsers
+              vscode-langservers-extracted
               typescript-language-server
               vtsls
               vue-language-server
