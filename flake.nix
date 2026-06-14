@@ -11,11 +11,7 @@
         };
         javascript = {
           path = ./templates/javascript;
-          description = "web or nodejs or bun";
-        };
-        frontend = {
-          path = ./templates/frontend;
-          description = "frontend app with node, pnpm, bun, chromium on Linux and playwright";
+          description = "javascript with optional browser, playwright, typescript, and vue tooling";
         };
         cpp = {
           path = ./templates/cpp;
