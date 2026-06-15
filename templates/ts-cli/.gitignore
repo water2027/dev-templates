@@ -1,0 +1,8 @@
+.devenv
+secret
+
+node_modules
+dist
+build
+coverage
+*.local
